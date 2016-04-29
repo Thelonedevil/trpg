@@ -1,0 +1,36 @@
+{
+  "turns": [
+    {
+      "combat":true,
+      "travel":false,
+      "enemies": [
+        {
+          "name": "Goblin 1",
+          "statistics": {
+            "strength": 8,
+            "constitution": 14,
+            "dexterity": 17,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 12
+          }
+        },
+        {
+          "name": "Goblin 2",
+          "statistics": {
+            "strength": 9,
+            "constitution": 13,
+            "dexterity": 17,
+            "intelligence": 10,
+            "wisdom": 14,
+            "charisma": 12
+          }
+        }
+      ]
+    },
+    {
+      "combat":false,
+      "travel":true
+    }
+  ]
+}
