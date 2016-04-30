@@ -1,6 +1,9 @@
 package uk.tldcode.games.character
 
-object Stat {
+case class Stat(strength:Int,constitution: Int,dexterity: Int,intelligence: Int,wisdom: Int,charisma: Int)
+
+
+/*object Stat {
 
   class Builder {
     private[tldcode] var strength: Int = 0
@@ -55,4 +58,4 @@ class Stat(val builder: Stat.Builder) {
   var wisdom: Int = builder.wisdom
   var charisma: Int = builder.charisma
 
-}
+}*/

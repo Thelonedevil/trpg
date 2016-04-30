@@ -1,6 +1,7 @@
 package uk.tldcode.games.engine
 
 import uk.tldcode.games.character.Character
+import uk.tldcode.games.character.playable.Player
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
@@ -12,6 +13,8 @@ trait Turn {
   private[engine] val ttype = ""
 
   private[engine] def nextTurn(): Unit
+
+  private[games] def setPlayers(players: Seq[Player]): Unit
 
   private[games] def start(): Unit
 }

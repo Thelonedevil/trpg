@@ -23,4 +23,8 @@ abstract class AbstractTurn(val characters: Seq[_ <: Character]) extends Turn {
       nextTurn()
     }
   }
+
+  private[games] def setPlayers(players:Seq[Player]):Unit={
+    players.foreach(p=>this.players+=p)
+  }
 }
